@@ -34,9 +34,10 @@ main section {
     text-align: center;
 }
 
-main .home-grid {
+main.home-grid {
     display: grid;
-    grid-template-columns: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 75px 500px 75px 100px 75px 350px 75px 75px 75px;
 }
 
 #background {
@@ -179,19 +180,16 @@ footer .social img   {
 }
 
 .rivers-card {
-    margin: 200px 0;
     grid-column: 2/4;
-    grid-row: 2/3;
+    grid-row: 2;
 }
 .camping-card {
-    margin: 200px 0;
     grid-column: 5/7;
-    grid-row: 2/3;
+    grid-row: 2;
 }
 .rapids-card   {
-    margin: 200px 0;
     grid-column: 8/10;
-    grid-row: 2/3;
+    grid-row: 2;
 }
 
 .card-img {
@@ -239,7 +237,7 @@ main section img {
 
 .mountains {
     grid-column: 2/7;
-    grid-row: 5/8;
+    grid-row: 5/7;
     box-shadow: 5px 5px 10px #6f7364;
 }
 
